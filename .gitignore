@@ -64,4 +64,4 @@ typings/
 .vscode
 
 # generated code for prisma
-src/generated/prisma
+src/generated
