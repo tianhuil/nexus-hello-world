@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "prisma deploy",
-    "seed": "prisma seed",
+    "deploy": "prisma deploy -p ./prisma/prisma.yml",
+    "seed": "prisma seed -p ./prisma/prisma.yml",
     "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src"
   },
   "author": "",
