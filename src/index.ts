@@ -2,7 +2,7 @@ import { prismaObjectType, makePrismaSchema } from 'nexus-prisma'
 import { GraphQLServer } from 'graphql-yoga'
 import { idArg } from 'nexus'
 import * as path from 'path'
-import { prisma } from './generated/prisma'
+import { prisma } from './generated/prisma-client'
 import datamodelInfo from './generated/nexus-prisma'
 
 // Expose the full "Query" building block
