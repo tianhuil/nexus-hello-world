@@ -1,4 +1,5 @@
-type User {
+type Todo {
   id: ID! @unique
-  name: String!
+  title: String!
+  done: Boolean! @default(value: "false") 
 }
