@@ -1,4 +1,4 @@
-import { prisma } from '../src/generated/prisma-client'
+import { prisma } from '../server/src/generated/prisma-client'
 
 async function main() {
   const users = await Promise.all([

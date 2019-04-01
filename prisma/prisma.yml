@@ -3,14 +3,14 @@ datamodel: datamodel.prisma
 
 generate:
   - generator: typescript-client
-    output: ../src/generated/prisma-client
+    output: ../server/src/generated/prisma-client
 
 hooks:
   post-deploy:
     - prisma generate
     - npx nexus-prisma-generate \
-      --client ./src/generated/prisma-client \
-      --output ./src/generated/nexus-prisma
+      --client ./server/src/generated/prisma-client \
+      --output ./server/src/generated/nexus-prisma
 
 seed:
   run: npx ts-node-dev ./prisma/seed.ts
