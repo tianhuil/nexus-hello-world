@@ -24,7 +24,7 @@ export const TodoList = () => (
         return (<React.Fragment>
           <h1>Todos</h1>
           <ol>
-            {data.todoes.map(todo => <li>{todo.title}</li>)}
+            {data.todoes.map(todo => <li key={todo.id}>{todo.title}</li>)}
           </ol>
         </React.Fragment>)
       }
